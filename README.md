@@ -136,39 +136,40 @@ A solução permite:
 
 ## 🚀 Como Executar o Projeto
 
-### 1️⃣ Clonar o repositório"
+### 1️⃣ Clonar o repositório
 
 ```bash
 git clone https://github.com/Alef2021/DATATHON_2026.git
 cd DATATHON_2026
+```
 
 ### 2️⃣ Instalar dependências
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
-3️⃣ Executar aplicação
+### 3️⃣ Executar aplicação
 
-streamlit run app/app.py
+- streamlit run app/app.py
 
-🛠️ Tecnologias Utilizadas
+### 🛠️ Tecnologias Utilizadas
 
-Python
+- Python
 
-Pandas
+- Pandas
 
-Scikit-learn
+- Scikit-learn
 
-XGBoost
+- XGBoost
 
-Streamlit
+- Streamlit
 
-Joblib
+- Joblib
 
-Jupyter Notebook
+- Jupyter Notebook
 
-👨‍💻 Autor
+### 👨‍💻 Autor
 
-Projeto desenvolvido para o Datathon 2026 – Postech
-Case: Associação Passos Mágicos
+- Projeto desenvolvido para o Datathon 2026 – Postech
+- Case: Associação Passos Mágicos
 
-Solução focada em Data Science aplicada à educação e impacto social.
+- Solução focada em Data Science aplicada à educação e impacto social.
