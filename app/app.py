@@ -39,16 +39,28 @@ st.divider()
 
 if st.button("🔎 Calcular risco"):
     
-    prob = model.predict_proba(input_df)[0][1]
+    probs = model.predict_proba(input_df)[0]
+    prob_em_fase = probs[0]
+    prob_moderado = probs[1]
+    prob_severo = probs[2]
+
     pred = model.predict(input_df)[0]
 
     st.subheader("Resultado da previsão")
 
-    st.metric("Probabilidade de risco", f"{prob*100:.1f}%")
+    if pred == 2:
+        st.metric("Probabilidade de risco alto", f"{prob_severo*100:.1f}%")
+    elif pred == 1:
+        st.metric("Probabilidade de risco moderado", f"{prob_moderado*100:.1f}%")
+    else:
+        st.metric("Probabilidade de estar em fase", f"{prob_em_fase*100:.1f}%")
 
-    if pred == 1:
+    if pred == 2:
         st.error("Aluno com ALTO risco de defasagem")
         st.write("👉 Recomenda-se acompanhamento pedagógico e psicossocial.")
+    elif pred == 1:
+        st.warning("Aluno com risco MODERADO de defasagem")
+        st.write("👉 Recomenda-se acompanhamento regular.")
     else:
-        st.success("Aluno fora da zona de risco")
+        st.success("Aluno fora da zona de risco de defasagem")
         st.write("👉 Manter acompanhamento regular.")
