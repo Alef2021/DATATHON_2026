@@ -8,7 +8,7 @@ st.title("📊 Modelo de Previsão de Risco Educacional")
 st.write("Sistema preditivo para identificar alunos com risco de defasagem escolar.")
 
 # carregar modelo
-model = joblib.load(r"C:\Users\Igor\Documents\GitHub\DATATHON_2026\DATATHON_2026\app\modelo_risco_random.pkl")
+model = joblib.load("modelo_risco_random.pkl")
 
 st.header("📥 Inserir dados do aluno")
 
