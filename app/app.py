@@ -18,7 +18,7 @@ st.set_page_config(page_title="Previsão de Risco Educacional", layout="centered
 st.header("📥 Inserir dados do aluno")
 
 col1, col2 = st.columns(2)
-c:/Users/Igor/Documents/GitHub/DATATHON_2026/DATATHON_2026/app/app.py
+
 with col1:
     IDA = st.number_input("IDA - Desempenho Acadêmico", 0.0, 10.0, 5.0)
     IEG = st.number_input("IEG - Engajamento", 0.0, 10.0, 5.0)
