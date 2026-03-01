@@ -1,19 +1,24 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 
-st.set_page_config(page_title="Previsão de Risco Educacional", layout="centered")
+
+
 
 st.title("📊 Modelo de Previsão de Risco Educacional")
 st.write("Sistema preditivo para identificar alunos com risco de defasagem escolar.")
 
 # carregar modelo
-model = joblib.load("modelo_risco_random.pkl")
+BASE_DIR = Path(__file__).parent
+model = joblib.load(BASE_DIR / "modelo_risco_random.pkl")
+
+st.set_page_config(page_title="Previsão de Risco Educacional", layout="centered")
 
 st.header("📥 Inserir dados do aluno")
 
 col1, col2 = st.columns(2)
-
+c:/Users/Igor/Documents/GitHub/DATATHON_2026/DATATHON_2026/app/app.py
 with col1:
     IDA = st.number_input("IDA - Desempenho Acadêmico", 0.0, 10.0, 5.0)
     IEG = st.number_input("IEG - Engajamento", 0.0, 10.0, 5.0)
