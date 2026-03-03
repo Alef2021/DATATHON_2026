@@ -131,18 +131,7 @@ adequado para uso prático pela instituição.
 -   Decisões educacionais baseadas em dados\
 -   Maior eficiência do programa social
 
-------------------------------------------------------------------------
 
-# 💰 Considerações Financeiras
-
-A solução apresenta baixo custo operacional e alta escalabilidade:
-
--   Uso de ferramentas open source\
--   Deploy em ambiente gratuito (Streamlit Cloud)\
--   Não exige infraestrutura dedicada\
--   Fácil integração com sistemas existentes
-
-Isso permite implementação imediata sem investimento inicial relevante.
 
 ------------------------------------------------------------------------
 
@@ -151,6 +140,3 @@ Isso permite implementação imediata sem investimento inicial relevante.
 **Alef Souza Pereira**\
 Pós-Tech em Data Analytics --- POSTECH
 
-Projeto desenvolvido no contexto do Datathon educacional da Associação
-Passos Mágicos, com foco em aplicação prática de ciência de dados para
-impacto social.
